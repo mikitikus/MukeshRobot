@@ -127,7 +127,7 @@ def add_blacklist(update, context):
     except:
           send_message(
               msg,
-              "Kasih gw kata anj lu bisa reply atau tambahin didepan nya"
+              "KATA-KATANYA MANA TOLOL!?"
           ) 
 
 
