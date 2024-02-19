@@ -203,7 +203,7 @@ def unblacklist(update, context):
     else:
         send_message(
             update.effective_message,
-            "Tell me which words you would like to remove from blacklist!",
+            "Kasih kata kata jamet mana yg harus gua unbl!",
         )
 
 
