@@ -102,7 +102,7 @@ async def repo(client, message):
                         "• ᴏᴡɴᴇʀ ᴄᴀʙᴜʟ •",user_id=OWNER_ID
                     ),
                     InlineKeyboardButton(
-                        "• ʀᴇᴘᴏ •",
+                        "• ᴄʜᴀɴɴᴇʟ •",
                         url="https://t.me/junkthings",
                     ),
                 ]
