@@ -98,7 +98,7 @@ def add_blacklist(update, context):
             if len(to_blacklist) == 1:
                 send_message(
                     msg,
-                    f"Added blacklist <code>{html.escape(to_blacklist[0])}</code> in chat: <b>{chat_name}</b>!",
+                    f"Ditambahkan ke daftar BL <code>{html.escape(to_blacklist[0])}</code> di gc busuk: <b>{chat_name}</b>!",
                     parse_mode=ParseMode.HTML,
                 )
 
@@ -121,7 +121,7 @@ def add_blacklist(update, context):
             if len(to_blacklist) == 1:
                 send_message(
                     msg,
-                    f"Added blacklist <code>{html.escape(to_blacklist[0])}</code> in chat: <b>{chat_name}</b>!",
+                    f"Ditambahkan ke daftar BL <code>{html.escape(to_blacklist[0])}</code> Di GC busuk: <b>{chat_name}</b>!",
                     parse_mode=ParseMode.HTML,
                 )
     except:
@@ -165,7 +165,7 @@ def unblacklist(update, context):
             if successful:
                 send_message(
                     update.effective_message,
-                    "Removed <code>{}</code> from blacklist in <b>{}</b>!".format(
+                    "Di hapus <code>{}</code> dari daftar bl <b>{}</b>!".format(
                         html.escape(to_unblacklist[0]), html.escape(chat_name)
                     ),
                     parse_mode=ParseMode.HTML,
@@ -178,7 +178,7 @@ def unblacklist(update, context):
         elif successful == len(to_unblacklist):
             send_message(
                 update.effective_message,
-                "Terhapus <code>{}</code> dari daftar bl <b>{}</b>!".format(
+                "Di hapus <code>{}</code> dari daftar bl <b>{}</b>!".format(
                     successful, html.escape(chat_name)
                 ),
                 parse_mode=ParseMode.HTML,
