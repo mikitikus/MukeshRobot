@@ -73,7 +73,7 @@ async def mentionall(event):
         pass
 
 
-@client.on(events.NewMessage(pattern="/cancel"))
+@client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
         return await event.respond("ᴛʜᴇʀᴇ ɪs ɴᴏ ᴘʀᴏᴄᴄᴇss ᴏɴ ɢᴏɪɴɢ..")
