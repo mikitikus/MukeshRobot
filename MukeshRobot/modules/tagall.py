@@ -73,15 +73,15 @@ async def mentionall(event):
         pass
 
 
-@client.on(events.NewMessage(pattern="^/cancel$"))
+@client.on(events.NewMessage(pattern="/cancel"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
         return await event.respond("ᴛʜᴇʀᴇ ɪs ɴᴏ ᴘʀᴏᴄᴄᴇss ᴏɴ ɢᴏɪɴɢ..")
-    is_admin = False
+    is_admin = True
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
     except UserNotParticipantError:
-        is_admin = False
+        is_admin = True
     else:
         if isinstance(
             partici_.participant, (ChannelParticipantAdmin, ChannelParticipantCreator)
