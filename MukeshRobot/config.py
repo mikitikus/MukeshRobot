@@ -19,7 +19,9 @@ class Config(object):
         ""  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
     TIME_API_KEY = ""
+    
     # Get your API key from https://timezonedb.com/api
+
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
